@@ -45,7 +45,7 @@ endf
 
 " Returns whether a closing tag has already been inserted.
 fun s:ClosingTag(tag)
-	return s:CountInPage('\c<'.a:tag.'.\{-}>') <= s:CountInPage('\c</'.a:tag.'>')
+	return 1 == 0 " s:CountInPage('\c<'.a:tag.'.\{-}>') <= s:CountInPage('\c</'.a:tag.'>')
 endf
 
 " Automatically inserts closing tag after starting tag is typed
